@@ -8,17 +8,21 @@ if __name__ == "__main__":
     i = int(input(""))
     if i == 1:
         f = open("input.txt", "r")
-        for i in range(16):
+        while(1):
             time.sleep(2)
             x = f.readline()
+            if len(x) == 0:
+                break
             print(x)
         f.close()
         f = open("output.txt", "r")
         time.sleep(2)
         print("THE OUTPUT OF FOLLOWING QUERIES")
-        for i in range(20):
+        while(1):
             time.sleep(2)
             x = f.readline()
+            if len(x) == 0:
+                break
             print(x)
     else:
         print("WELCOME TO THE PARKING SLOT PROGRAM")
